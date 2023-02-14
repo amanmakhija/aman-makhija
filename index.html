@@ -8,12 +8,17 @@
     <title>Aman Makhija</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
 <body>
 
     <nav class="navbar">
-        <p class="heading">Aman</p>
+        <p id="heading" class="heading">Aman</p>
         <ul id="links" class="links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -31,17 +36,69 @@
         <div class="text-box">
             <p>HI I'M</p>
             <h1>AMAN</h1>
-            <h3 id="sub-heading">A WEB DEVELOPER</h3>
             <div class="row">
                 <a href="#about">Explore My Portfolio</a>
                 <a href="#contact">Connect With Me <span>&#x27F6;</span></a>
             </div>
         </div>
     </div>
-    <div id="about" class="page">About</div>
-    <div id="skills" class="page">Skills</div>
-    <div id="projects" class="page">Projects</div>
-    <div id="contact" class="page">Contact</div>
+
+    <div id="about" class="about">
+        <div class="hero-img">
+            <img src="./res/hero.jpg" alt="Aman Makhija">
+        </div>
+        <div>
+            <h1>About Me</h1>
+            <div class="typing">
+                <p class="text-slider"></p>
+            </div>
+            <p>
+                I'm Aman, a passionate Full Stack Web Developer with<br>additional skills of App Development, Graphic
+                Designing,<br>Video & Photo Editing.
+            </p>
+        </div>
+    </div>
+
+    <div id="skills" class="skills">
+        <div>
+            <p>SKILLS</p>
+        </div>
+        <div id="skillset" class="skillset"></div>
+    </div>
+
+    <div id="projects" class="projects">
+        <div>
+            <p id="project-heading">Projects</p>
+        </div>
+        <div id="project-container"></div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div>
+            <p>CONTACT</p>
+            <span>Let me buy you a coffee?</span>
+            <span>And discuss your ideas to build your dream application.</span>
+        </div>
+        <div>
+            <form method="post">
+                <div class="name">
+                    <label for="name">NAME</label>
+                    <input id="name" type="text"></input>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="email">
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="email">
+                    <i class="fa fa-book"></i>
+                </div>
+                <div class="message">
+                    <label for="message">MESSAGE</label>
+                    <textarea aria-expanded="false" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="send-btn">Send <i class="fa fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="info">
@@ -73,7 +130,11 @@
         </div>
     </footer>
 
-    <script defer src="./script.js"></script>
+    <script src="./node_modules/typed.js/lib/typed.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
